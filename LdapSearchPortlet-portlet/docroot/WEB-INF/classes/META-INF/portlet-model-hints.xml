@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.trinet.model.model.Profile">
+		<field name="id" type="long" />
+		<field name="email" type="String" />
+		<field name="userId" type="long" />
+		<field name="associateId" type="long" />
+		<field name="firstName" type="String" />
+		<field name="lastName" type="String" />
+		<field name="summary" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="yearOfExperience" type="int" />
+		<field name="experience" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="primarySkills" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="secondarySkills" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="clientName" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="education" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+	</model>
+</model-hints>

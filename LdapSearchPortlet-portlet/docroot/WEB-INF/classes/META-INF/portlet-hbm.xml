@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.trinet.model.model.Profile" />
+	<class name="com.trinet.model.model.impl.ProfileImpl" table="userprofile_Profile">
+		<cache usage="read-write" />
+		<id name="email" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="id" type="com.liferay.portal.dao.orm.hibernate.LongType" column="id_" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="associateId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="firstName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="lastName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="summary" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="yearOfExperience" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="experience" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="primarySkills" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="secondarySkills" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="clientName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="education" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

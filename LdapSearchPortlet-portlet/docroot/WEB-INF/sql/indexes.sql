@@ -1,0 +1,1 @@
+create index IX_80D57FFE on userprofile_Profile (email);

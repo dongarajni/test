@@ -1,0 +1,27 @@
+.search-width{
+	width: 100%;
+}
+
+.td{
+		width: 50%;
+	}
+
+	
+	
+	  .advance-search{
+   left:0px;
+  position: relative;
+  display: block;
+    }
+  
+  	.input-align-form #advance label {
+  		width: 100px;
+  		
+  	}
+  	
+  	.aui button.btn, .aui input[type="submit"].btn {
+  
+  /* margin-top: -9px; */
+  margin-bottom : 13px;
+}
+

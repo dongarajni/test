@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.trinet.model">
+	<author>ronak.parekh</author>
+	<namespace>userprofile</namespace>
+
+	<entity name="Profile" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+		<column name="id" type="long" id-type="increment" />
+		<column name="email" type="String" primary="true" />
+		<column name="userId" type="long" />
+
+		
+
+		<!-- Other fields -->
+		
+		<column name="associateId" type="long" />
+		<column name="firstName" type="String" />
+		<column name="lastName" type="String" />
+		<column name="summary" type="String" />
+		<column name="yearOfExperience" type="int" />
+		<column name="experience" type="String" />
+		<column name="primarySkills" type="String" />
+		<column name="secondarySkills" type="String" />
+		<column name="clientName" type="String" />
+		<column name="education" type="String" />
+		
+		<finder name="userFinder" return-type="Profile">
+			<finder-column name="email" />
+		</finder>
+
+	</entity>
+	
+	
+</service-builder>
